@@ -22,24 +22,44 @@ Construir um modelo de regressão preditiva capaz de prever as vendas de sorvete
 2.  **Treinamento do Modelo no Azure:**
     * Utilização do Azure Machine Learning para treinar um modelo de regressão (por exemplo, Regressão Linear, Random Forest Regressor, etc.).
     * Seleção e ajuste de hiperparâmetros do modelo.
+  
+      **Criação do Experimento no Azure ML Studio**
+      Tela inicial do Azure Machine Learning Studio, destacando a criação de um novo experimento.
+      ![image](https://github.com/user-attachments/assets/b64ee829-5245-49f3-9c76-3c38497a8d12)
+  
+      **Configuração do Dataset no Azure ML Studio**
+      Dataset carregado no Azure ML Studio, com as colunas 'Data', 'Vendas' e 'Temperatura' visíveis.
+      ![image](https://github.com/user-attachments/assets/2d0c825e-d01f-426f-8d9c-d57d55d6fe55)
+  
+      **Configuração da computação no Azure ML Studio**
+      Configurando a computação necessarian no Azure ML Studio 'Instacia de computação e Cluster de computação'.
+      ![image](https://github.com/user-attachments/assets/dd927918-b481-460a-868f-48fd8ab90dec)
 
-3.  **Registro e Gerenciamento do Modelo com MLflow:**
-    * Integração do MLflow para rastrear experimentos, registrar o modelo treinado e gerenciar suas versões.
+      ![image](https://github.com/user-attachments/assets/e1f17e4a-e5c5-4198-bc66-4ee97525e1c3)
 
-4.  **Implementação para Previsões em Tempo Real (Conceitual):**
-    * Discussão sobre como o modelo poderia ser implementado em um ambiente de cloud (por exemplo, usando o Azure Container Instances ou Azure Functions) para fornecer previsões em tempo real.
+      **Configuração da computação no Azure ML Automatizado**
+      Configurando ML Automatizado para treinar e localizar melhor o modelo.
+      ![image](https://github.com/user-attachments/assets/3e1dd3f8-aef6-43cf-ba86-b5983d9bd3b2)
 
-5.  **Criação de um Pipeline de Machine Learning:**
-    * Estruturação de um pipeline usando o Azure Machine Learning SDK ou a interface visual para automatizar o processo de treinamento e avaliação do modelo.
+      **Configurando Designer**
+      usa componentes pré-construídos existentes e tipos de conjunto de dados anteriores (tabular, arquivo) e é mais adequada para processamento de dados e tarefas tradicionais de          aprendizado de máquina, como regressão e classificação.
+      ![image](https://github.com/user-attachments/assets/b855e066-fbbf-447b-91bb-e85c42e1395e)
 
-## Análise das Sentenças (Tarefa Adicional)
+      ![image](https://github.com/user-attachments/assets/68715812-34ec-485b-968a-0968859a79c0)
 
-Após a análise das sentenças no arquivo `inputs/sentencas.txt` pela IA (você!), aqui estão alguns insights e possibilidades:
+      **Execução do JObs do modelo**
+      Execução do JObs do modelo com os dados treinados.
+      ![image](https://github.com/user-attachments/assets/bebd8115-c2e9-417c-b45d-792153c39ff9)
 
-* **Identificação de Temas:** As sentenças sugerem temas relacionados ao clima e atividades ao ar livre, que indiretamente podem influenciar a venda de sorvetes. Dias quentes e ensolarados, assim como fins de semana, provavelmente levam a um aumento nas vendas.
-* **Correlação Indireta:** Embora as sentenças não mencionem diretamente vendas de sorvete, podemos inferir uma correlação entre o clima quente e a maior probabilidade de consumo de sorvetes.
-* **Possibilidades de Análise Mais Profunda:** Se tivéssemos um conjunto maior de sentenças, poderíamos aplicar técnicas de Processamento de Linguagem Natural (PLN) para extrair informações mais detalhadas sobre eventos, sentimentos e outros fatores que poderiam impactar as vendas (por exemplo, menções a eventos locais, feriados, etc.).
-* **Integração com Dados de Vendas:** No futuro, poderíamos integrar a análise de texto de diversas fontes (redes sociais, notícias locais, etc.) com os dados de temperatura e vendas para criar um modelo de previsão ainda mais robusto.
+      ![image](https://github.com/user-attachments/assets/c199e7ad-7da7-42c5-8d0e-689846677f4b)
+
+Durante a construção deste projeto, alguns insights importantes podem surgir:
+
+* **A Importância da Correlação:** A forte correlação entre temperatura e vendas de sorvete torna a temperatura uma variável preditora relevante.
+* **O Poder do Machine Learning para Otimização:** Modelos preditivos podem ajudar empresas a tomar decisões mais informadas e otimizar seus processos.
+* **A Utilidade do Azure e MLflow:** O Azure oferece um ambiente robusto para treinamento e implantação de modelos, enquanto o MLflow facilita o gerenciamento do ciclo de vida do modelo.
+* **A Relevância de Pipelines:** Pipelines automatizados garantem a reprodutibilidade e facilitam a atualização e o retreinamento de modelos.
+* **Considerações sobre Dados Reais:** Trabalhar com dados reais pode trazer desafios como dados faltantes, outliers e a necessidade de engenharia de features mais complexa.
 
 ## Prints do Processo (A Serem Adicionados)
 
@@ -69,15 +89,3 @@ Durante a construção deste projeto, alguns insights importantes podem surgir:
 * **Previsão de Demanda por Sabor:** Se os dados permitirem, tentar prever a demanda por diferentes sabores de sorvete.
 * **Implementação em Nuvem:** Implementar o modelo treinado em um serviço de nuvem para fornecer previsões em tempo real para a sorveteria.
 * **Criação de uma Interface de Usuário:** Desenvolver uma interface simples para que o proprietário da Gelato Mágico possa inserir a temperatura e obter a previsão de vendas.
-
-## Como Executar (Futuramente)
-
-Aqui você descreverá como executar os scripts e notebooks que você criará para este projeto.
-
-## Contribuição
-
-(Opcional) Se você quiser incentivar a contribuição de outros.
-
-## Licença
-
-(Opcional) Adicionar uma licença ao seu projeto.
